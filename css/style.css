@@ -2,7 +2,7 @@
 
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400italic,800italic,400,800");
 /* @import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap'); */
-@import url("https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
 
 * {
   box-sizing: border-box;
@@ -14,37 +14,39 @@ use the fonts in other ways in the font hierarchy etc. */
 
 /* change these */
 :root {
-  --bg-color: red;
-  --link-color: green;
-  --link-hover-color: blue;
-  --color-4: hotpink;
-  --color-5: rebeccapurple;
+  --bg-color: #acb8b7;
+  --link-color: #c3cdd2;
+  --link-hover-color: #cfc5bd;
+  --color-4: #d2cbcd;
+  --color-5: #dfd6cf;
 
   --primary-font: "Open Sans", sans-serif;
-  --secondary-font: "Droid Serif", serif;
-  --main-text-color: #000;
+  --secondary-font: "Roboto";
+  --main-text-color: #51504c;
 
   --white-space: 1rem;
 }
-
-button {
-  transition: all 3s;
+body {
+  background-color: #f1f2f4;
 }
+/* button {
+  transition: all 3s;
+} */
 a {
   transition: all 3s;
 }
 button:hover {
   background-color: var(--link-hover-color);
-  transform: scale(3) rotate(40deg);
+  /* transform: scale(3) rotate(40deg); */
 }
 
-button:active {
+/* button:active {
   background-color: var(--bg-color);
-}
+} */
 
 a:hover {
   color: var(--link-hover-color);
-  font-size: 4rem;
+  font-size: 1rem;
 }
 html {
   font-size: 100%;
@@ -152,19 +154,18 @@ ul li:last-child {
 }
 
 .texture-swatch-1 {
-  background: url(../img/pw_maze_white.png) top left repeat;
+  background: url(../img/1.jpg) no-repeat;
+  background-size: cover;
 }
 
 .texture-swatch-2 {
-  background: url(../img/subtle_grunge.png) top left repeat;
-}
-
-.texture-swatch-1 {
-  background: url(../img/pw_maze_white.png) top left repeat;
+  background: url(../img/2.jpg) no-repeat;
+  background-size: cover;
 }
 
 .texture-swatch-3 {
-  background: url(../img/white_paperboard.png) top left repeat;
+  background: url(../img/3.jpg) no-repeat;
+  background-size: cover;
 }
 
 .images ul {
@@ -180,16 +181,16 @@ ul li:last-child {
 
 button {
   padding: 1rem;
-  border-radius: 4px;
+  border-radius: 34px;
   background: var(--link-color);
   text-align: center;
   text-decoration: none;
   font: bold 1.25em/1 var(--primary-font);
   letter-spacing: 1px;
   color: white;
-  text-transform: uppercase;
-  text-shadow: 0px -1px 0px #0374a0;
-  transition: all 0.2s ease;
+  /* text-transform: uppercase; */
+  /* text-shadow: 0px -1px 0px #0374a0; */
+  /* transition: all 0.2s ease; */
   cursor: pointer;
   margin: 0 1rem 1rem 0;
 }
